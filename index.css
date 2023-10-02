@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Futura";
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#page1 {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  flex-direction: column;
+}
+#page1 > h1 {
+  font-size: 290px;
+}
+.videocontainer {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+}
+
+.videocontainer video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.play {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position: fixed;
+  background-color: black;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  opacity: 0;
+  scale: 0;
+}
